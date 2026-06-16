@@ -34,3 +34,42 @@ gsap.from("picture:nth-child(2)", {
     duration: 1,
     y: -60
  })
+
+ gsap.from(".card",{
+    opacity: 0,
+    duration: 1,
+    stagger: .2,
+    y: 100,
+    filter: "blur(20px)",
+    scrollTrigger: {
+        trigger: ".secaoCidade",
+        scrub: 1,
+        start: "0% 80%",
+        end: "90% 70%"
+    }
+ })
+
+ gsap.from(".secaoObrigado ul li",{
+    opacity: 0,
+    stagger: .1,
+    x: 40,
+    filter: "blur(10px)",
+    scrollTrigger: {
+        trigger: ".secaoObrigado ul",
+        scrub: 2,
+        start: "0% 80%",
+        end: "100% 50%",
+        markers: true
+    }
+ })
+
+ gsap.from("footer", {
+    y: "-30%",
+    immediateRender:false,
+    scrollTrigger: {
+        trigger: "footer",
+        scrub: true,
+        invalidateOnRefresh: true,
+        end: "100% 100%"
+    }
+ })
