@@ -95,7 +95,6 @@ gsap.from("picture:nth-child(2)", {
       trigger: TextoUnicoSplit,
       start: "100% 85%",      // A animação começa quando o topo do texto chega a 85% da tela
       // onEnter, onLeave, onEnterBack, onLeaveBack
-      toggleActions: "restart none restart none"
    }
 })
  })

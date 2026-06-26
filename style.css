@@ -367,7 +367,7 @@ footer {
   }
 
   .secaoCidade {
-    margin-top: 80px;
+    padding-top: 80px;
     button {
       display: none;
     }
