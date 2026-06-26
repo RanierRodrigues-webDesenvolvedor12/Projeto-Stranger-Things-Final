@@ -1,9 +1,5 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { SplitText } from "gsap/SplitText";
+const { gsap, ScrollTrigger, ScrollSmoother, SplitText } = window;
 
-// Registro dos plugins
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // Configuração do ScrollSmoother
